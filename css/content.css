@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.menubar {
+    position: relative;
+    width: 96vw; 
+    height: 5vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vw;
+    margin-left: 2vw; 
+    margin-right: 2vw;
+    border-radius: 10vw;
+    padding: 1.5vw;
+    z-index: 10;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 100%);
+    backdrop-filter: blur(20px); 
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1.5px solid rgba(255, 255, 255, 0.6);
+    border-left: 1.5px solid rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow:  0 8px 25px rgba(0, 0, 0, 0.06), 
+    inset 2px 2px 6px rgba(255, 255, 255, 0.4);
+}
+
+
+.menubar > a {
+    text-decoration: none; 
+    color: #000000; 
+    font-size: 3vw; 
+    font-weight: normal;
+    cursor: pointer;
+    position: relative;
+    top: -1vw;
+    z-index: 10;
+}
+
+
+.li-list li a {
+    text-decoration: none; 
+    color: #000000; 
+    font-size: 1.8vw; 
+    font-family: Arial, sans-serif; 
+    transition: color 0.3s ease; 
+    cursor: pointer;
+    position: relative;
+   
+    left: -3vw;
+}
+
+.li-list {
+    display: flex; 
+    gap: 3.5vw; 
+    list-style: none; 
+    align-items: center;
+    padding: 0;
+}
+
+
+.list_container {
+    display: flex;
+    align-items: center;
+    gap: 3vw; 
+    position: relative; 
+}
+
+
+.location {
+    position: absolute;
+    top: 3.5vw; 
+    z-index: -1; 
+    pointer-events: none;
+}
+
+.obvodka {
+    display: block;
+}
+
+
+
+#contact-page .location { 
+    right: 5vw;
+    top: 2.7vw;
+}
+
+#contact-page .obvodka {
+     width: 10vw;
+}
+
+
+#lab-page .location { 
+    right: 18vw; 
+    top: 1.2vw;
+    opacity: 55%;
+}
+
+#lab-page .obvodka { 
+    width: 22vw;
+}
+
+
+#cataloge-page .location { 
+    right: 42vw;
+    top: 2.5vw;
+}
+
+#cataloge-page .obvodka {
+     width: 10vw;
+}
+
+
+#about-page .location { 
+    right: 53vw; 
+    top: 2.5vw;
+}
+
+#about-page .obvodka { 
+    width: 11vw; 
+}
+
+
+#main-page .location { 
+    display: none; 
+}
